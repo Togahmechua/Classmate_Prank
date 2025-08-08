@@ -13,7 +13,7 @@ public class LooseCanvas : UICanvas
 
     private void OnEnable()
     {
-        AudioManager.Ins.PlaySFX(AudioManager.Ins.loose);
+        //AudioManager.Ins.PlaySFX(AudioManager.Ins.loose);
     }
 
     private void Start()
@@ -25,8 +25,9 @@ public class LooseCanvas : UICanvas
             UIManager.Ins.TransitionUI<ChangeUICanvas, LooseCanvas>(0.6f,
                () =>
                {
+                   LevelManager.Ins.DespawnLevel();
                    UIManager.Ins.OpenUI<MainCanvas>();
-                   //LevelManager.Ins.LoadMapByID(LevelManager.Ins.curMapID);
+                   LevelManager.Ins.SpawnLevel();
                });
         });
 
@@ -37,7 +38,7 @@ public class LooseCanvas : UICanvas
             UIManager.Ins.TransitionUI<ChangeUICanvas, LooseCanvas>(0.6f,
                () =>
                {
-                   //LevelManager.Ins.DespawnMap();
+                   LevelManager.Ins.DespawnLevel();
                    UIManager.Ins.OpenUI<StartCanvas>();
                });
         });

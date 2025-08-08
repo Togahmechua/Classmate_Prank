@@ -495,7 +495,6 @@ MonoBehaviour:
   IsDestroyOnClose: 0
   roateImg: {fileID: 227764043417452271}
   speed: 90
-  nextBtn: {fileID: 415165119530313220}
   menuBtn: {fileID: 169035137371385488}
 --- !u!1 &3349839367237871315
 GameObject:
@@ -637,7 +636,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NEXT
+  m_text: RETRY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71342ca5650d6cb4b94225572ff57d84, type: 2}
   m_sharedMaterial: {fileID: 9043048277837497829, guid: 71342ca5650d6cb4b94225572ff57d84, type: 2}
@@ -741,7 +740,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000022888, y: 34}
-  m_SizeDelta: {x: 108, y: 131}
+  m_SizeDelta: {x: 133, y: 116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8699080419621105610
 CanvasRenderer:
@@ -771,7 +770,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bab50706436ceed4495a9e35095ec96c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fc7e5554ea57674f94b23488140da7b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
