@@ -33,14 +33,14 @@ public class PauseCanvas : UICanvas
     {
         continueBtn.onClick.AddListener(() =>
         {
-            //AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
+            AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
             UIManager.Ins.CloseUI<PauseCanvas>();
             UIManager.Ins.OpenUI<MainCanvas>();
         });
 
         menuBtn.onClick.AddListener(() =>
         {
-            //AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
+            AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
 
             UIManager.Ins.TransitionUI<ChangeUICanvas, PauseCanvas>(0.6f,
                 () =>
@@ -52,7 +52,7 @@ public class PauseCanvas : UICanvas
 
         retryBtn.onClick.AddListener(() =>
         {
-            //AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
+            AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
             
             UIManager.Ins.TransitionUI<ChangeUICanvas, PauseCanvas>(0.6f,
                () =>
@@ -65,7 +65,7 @@ public class PauseCanvas : UICanvas
 
         soundBtn.onClick.AddListener(() =>
         {
-           // AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
+           AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
 
             if (AudioManager.Ins.IsMuted)
                 AudioManager.Ins.TurnOn();

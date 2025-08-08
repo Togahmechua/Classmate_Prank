@@ -207,7 +207,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.02
 --- !u!114 &3150431671405948273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +221,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 429907787591044289}
+  hitCollider: {fileID: 3878928556327976824}
+  overlapRadius: 0.02
+  handLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &5136878849181273206
 MonoBehaviour:
   m_ObjectHideFlags: 0

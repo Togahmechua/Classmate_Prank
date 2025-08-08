@@ -15,4 +15,16 @@ public class Cache
 
         return hand[collider];
     }
+
+    private static Dictionary<Collider2D, Table> table = new Dictionary<Collider2D, Table>();
+
+    public static Table GetTable(Collider2D collider)
+    {
+        if (!table.ContainsKey(collider))
+        {
+            table.Add(collider, collider.GetComponent<Table>());
+        }
+
+        return table[collider];
+    }
 }

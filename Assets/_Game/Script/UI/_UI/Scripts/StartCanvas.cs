@@ -15,7 +15,7 @@ public class StartCanvas : UICanvas
 
         startBtn.onClick.AddListener(() =>
         {
-            //AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
+            AudioManager.Ins.PlaySFX(AudioManager.Ins.click);
 
             anim.Play(CacheString.TAG_Play_StartCanvas);
         });

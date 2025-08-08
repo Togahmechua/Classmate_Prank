@@ -6,11 +6,14 @@ public class Level : MonoBehaviour
 {
     [SerializeField] private CameraAnchor[] camAnchor;
     [SerializeField] private Canvas cv;
+    [SerializeField] private Aim aim;
 
     private void Start()
     {
         cv.renderMode = RenderMode.ScreenSpaceCamera;
         cv.worldCamera = Camera.main;
+
+        UIManager.Ins.mainCanvas.ResetUI();
 
         StartCoroutine(IETurnOff());
     }
@@ -22,5 +25,10 @@ public class Level : MonoBehaviour
         {
             cam.enabled = false;
         }
+    }
+
+    public void Stab()
+    {
+        aim.Stab();
     }
 }
